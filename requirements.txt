@@ -1,7 +1,12 @@
-flask
-os
-sqlalchemy.orm
-sqlalchemy
+certifi==2020.12.5
+click==7.1.2
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.2
+MarkupSafe @ file:///opt/concourse/worker/volumes/live/fac44ebc-60de-4182-7f89-29bb8796c554/volume/markupsafe_1607027351541/work
+mysql-connector==2.2.9
+psycopg2 @ file:///opt/concourse/worker/volumes/live/ba6afed2-743d-4eab-7fd9-80d08764582a/volume/psycopg2_1608147600870/work
+PyMySQL==0.10.1
+SQLAlchemy==1.3.22
+Werkzeug==1.0.1
 gunicorn
-sqlalchemy.ext.declarative
-datetime
