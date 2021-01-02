@@ -1,0 +1,7 @@
+flask
+os
+sqlalchemy.orm
+sqlalchemy
+gunicorn
+sqlalchemy.ext.declarative
+datetime
