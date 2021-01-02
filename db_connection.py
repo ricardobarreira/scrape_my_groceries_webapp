@@ -2,11 +2,11 @@ import os
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from db_objects import Store, Products, Offers
-
+from sqlalchemy.pool import NullPool
 
 # Config setting
 def create_session():
-    engine = create_engine(os.getenv("DATABASE_URL"))
+    engine = create_engine(os.getenv("DATABASE_URL"), poolclass=NullPool)
     Session = sessionmaker(bind=engine)
     session = Session()
     return session
