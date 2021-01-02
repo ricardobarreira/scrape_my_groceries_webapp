@@ -15,6 +15,7 @@ def create_session():
 def get_products_names():
     session = create_session()
     query = session.query(Products.product_name).order_by(Products.product_name).all()
+    session.close()
     return [i[0] for i in query]
 
 
@@ -26,7 +27,7 @@ def get_full_offers_list(products_list):
 
     ordered_by_store_query = query.order_by(Store.store_name)
     ordered_by_name_list = ordered_by_store_query.order_by(Products.product_name).all()
-
+    session.close()
     return ordered_by_name_list
 
 

@@ -18,3 +18,4 @@ def results():
         return render_template('results.html', complete_offers_list=offers_list)
     else:
         return redirect("/")
+
